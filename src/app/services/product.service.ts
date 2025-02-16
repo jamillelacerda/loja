@@ -9,7 +9,7 @@ export class ProductService {
   private products: Product[] = [
     {
       id: 1,
-      name: 'Blusa Any',
+      name: 'Blusa Any - PP ao GG',
       price: 0.00,
       description: 'Molde detalhado para vestidos.',
       image: "assets/images/blusa-any/capa-produto.jpeg",
@@ -17,40 +17,55 @@ export class ProductService {
         {
           name: "A4",
           resources: [{
-            name: 'PP - A4',
+            name: 'PP',
             description: 'Blusa Any PP - A4',
-            url: 'assets/moldes/blusa-any/BlusaAnyP-A4.pdf'
+            url: 'assets/moldes/blusa-any/Blusa Any PP - A4.pdf'
           }, {
-            name: 'P - A4',
+            name: 'P',
             description: 'Blusa Any P - A4',
-            url: 'assets/moldes/blusa-any/Blusa Any PP - A4.pdf'
+            url: 'assets/moldes/blusa-any/Blusa Any P - A4.pdf'
           }, {
-            name: 'M - A4',
+            name: 'M',
             description: 'Blusa Any PP - A4',
-            url: 'assets/moldes/blusa-any/Blusa Any PP - A4.pdf'
+            url: 'assets/moldes/blusa-any/Blusa Any M - A4.pdf'
           }, {
-            name: 'G - A4',
+            name: 'G',
             description: 'Blusa Any PP - A4',
-            url: 'assets/moldes/blusa-any/Blusa Any PP - A4.pdf'
+            url: 'assets/moldes/blusa-any/Blusa Any G - A4.pdf'
           }, {
-            name: 'GG - A4',
+            name: 'GG',
             description: 'Blusa Any PP - A4',
-            url: 'assets/moldes/blusa-any/Blusa Any PP - A4.pdf'
+            url: 'assets/moldes/blusa-any/Blusa Any GG - A4.pdf'
           }]
         },
         {
           name: "Plotter",
           resources: [{
-            name: 'PP - Plotter',
+            name: 'PP',
             description: 'Blusa Any PP - Plotter',
-            url: 'assets/moldes/blusa-any/Blusa Any PP - A4.pdf'
+            url: 'assets/moldes/blusa-any/Blusa Any PP - Plotter.pdf'
+          }, {
+            name: 'P',
+            description: 'Blusa Any P - Plotter',
+            url: 'assets/moldes/blusa-any/Blusa Any P - Plotter.pdf'
+          }, {
+            name: 'M',
+            description: 'Blusa Any PP - Plotter',
+            url: 'assets/moldes/blusa-any/Blusa Any M - Plotter.pdf'
+          }, {
+            name: 'G',
+            description: 'Blusa Any PP - Plotter',
+            url: 'assets/moldes/blusa-any/Blusa Any G - Plotter.pdf'
+          }, {
+            name: 'GG',
+            description: 'Blusa Any PP - Plotter',
+            url: 'assets/moldes/blusa-any/Blusa Any GG - Plotter.pdf'
           }]
         }
       ],
       details: [
         "Apenas máquina reta",
         "Sugestão de tecido: viscolinho",
-        "Tamanhos: PP ao GG",
         "Opções de impressão: A4 e Plotter",
         "Passo a passo da costura",
         "Manual de instruções",

@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductGalleryComponent } from './product-gallery/product-gallery.component';
 import { HomeComponent } from './home/home.component';
-import { CommonModule } from '@angular/common';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { Produto1Component } from './products/produto1/produto1.component';
+import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { Produto1Component } from './products/produto1/produto1.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

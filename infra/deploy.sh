@@ -25,6 +25,8 @@ ls -l "$DIST_FOLDER"
 echo ""
 read -p "Confira os arquivos listados acima. Pressione qualquer tecla para continuar ou CTRL+C para cancelar..." -n 1 -r
 
+aws s3 rm s3://jamillelacerda.com.br --recursive
+
 # Sincroniza os arquivos da pasta com o bucket S3
 echo ""
 echo "Subindo arquivos para o bucket S3: $BUCKET_NAME..."

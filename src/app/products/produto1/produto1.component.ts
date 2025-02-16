@@ -4,9 +4,10 @@ import { Product } from 'src/app/models/product.model';
 import { ProductService } from 'src/app/services/product.service';
 
 @Component({
-  selector: 'app-produto1',
-  templateUrl: './produto1.component.html',
-  styleUrls: ['./produto1.component.scss']
+    selector: 'app-produto1',
+    templateUrl: './produto1.component.html',
+    styleUrls: ['./produto1.component.scss'],
+    standalone: false
 })
 export class Produto1Component {
   product: Product | undefined;

@@ -3,9 +3,10 @@ import { ProductService } from '../services/product.service';
 import { Product } from '../models/product.model';
 
 @Component({
-  selector: 'app-product-gallery',
-  templateUrl: './product-gallery.component.html',
-  styleUrls: ['./product-gallery.component.scss']
+    selector: 'app-product-gallery',
+    templateUrl: './product-gallery.component.html',
+    styleUrls: ['./product-gallery.component.scss'],
+    standalone: false
 })
 export class ProductGalleryComponent implements OnInit {
   products: Product[] = [];

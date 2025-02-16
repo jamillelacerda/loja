@@ -3,13 +3,14 @@
     <h2 class="text-3xl font-bold mb-8">Galeria de Produtos</h2>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      <!-- Card 1 -->
-      <div class="bg-white p-4 rounded shadow">
-        <img src="https://via.placeholder.com/300x200?text=Meu+Produto" alt="Molde Grátis" class="mb-4 w-full rounded" />
-        <h3 class="font-bold text-lg">Blusa Anny</h3>
-        <p class="text-gray-700">Molde grátis</p>
+      <div *ngFor="let product of products" class="bg-white p-4 rounded shadow">
+        <img [src]="product.image" [alt]="product.name" class="mb-4 w-full rounded">
+        <h3 class="font-bold text-lg">{{ product.name }}</h3>
+        <p class="text-gray-700">{{ product.price === 0? 'GRÁTIS' : "R$ " + (product.price | number:'1.2-2') }}</p>
+        <a [routerLink]="['/product', product.id]" class="mt-2 inline-block bg-wine-500 text-white px-4 py-2 rounded shadow hover:bg-vinho-600">
+          Ver Detalhes
+        </a>
       </div>
-      <!-- Adicione quantos quiser -->
     </div>
   </div>
 </section>
